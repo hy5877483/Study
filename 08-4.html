@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>이벤트</title>
+	<script src="c:\jQuery\jquery-3.6.0.js"></script>
+	<style type="text/css">
+		div{display:block;
+			width:500px;
+			background-color:green;
+			color:white;
+			font-size:20px;}
+	</style>
+	<script>
+		$(function(){
+			$('button').click(function(){
+				$('div').toggle("slow");
+			})
+		})
+	</script>
+</head>
+<body>
+	<h2> .toggle() 메서드</h2>
+	<div>
+		이곳은 삼육대학교입니다.<br>
+		우리는 웹프로그래밍을 배우고 있습니다.
+	</div>
+	<button> 버튼(Toggle) </button>
+</body>
+</html>
